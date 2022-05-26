@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  color: rgb(37, 21, 182);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3%;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.left-col, .right-col {
+  padding: 3%;
+  border: none 0 black;
+  width: 30%;
+  margin: 2%;
+  border-radius: 15px;
+  box-shadow: 0 -3px 50px -10px grey;
+}
