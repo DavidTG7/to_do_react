@@ -1,0 +1,45 @@
+.todo-item {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+  margin: 15px auto;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  box-shadow: 0 0 20px -5px grey;
+  border-radius: 8px;
+  font-size: 1.2em;
+  background: hsla(147, 18%, 89%, 1);  
+}
+
+.check-item {
+  margin: auto 15px;
+  width: 19px;
+}
+
+.check-item-completed {
+  /* margin: auto 15px; */
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(9, 196, 18)); 
+}
+
+.check-item:hover{
+  filter: opacity(0.4) drop-shadow(0 0 0 rgb(245, 35, 28)); 
+}
+
+.paragraph-item-completed {
+  text-decoration: line-through;
+}
+
+.paragraph-item {
+  flex: 2 1 auto;
+}
+
+.delete-img {
+  width: 19px;
+  margin-right: 15px;
+}
+
+.delete-img:hover {
+  filter: opacity(0.4) drop-shadow(0 0 0 hsla(0, 69%, 51%, 1)); 
+}

@@ -7,9 +7,9 @@ import { CreateTodo } from "./components/CreateTodo";
 import './styles.css';
 
 const todos = [
-  {text: 'Cut onion', comlpeted: false},
-  {text: 'Take React course', comlpeted: false},
-  {text: 'Make something to eat', comlpeted: false},
+  {text: 'Cut onion', completed: false},
+  {text: 'Take React course', completed: false},
+  {text: 'Make something to eat', completed: true},
 ];
 
 
@@ -31,6 +31,7 @@ export default function App() {
             <TodoItem 
               key = {item.text}
               text = {item.text}
+              completed = {item.completed}
             />
           ))}
         </TodoList>
