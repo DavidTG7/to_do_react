@@ -105,6 +105,9 @@ export default function App() {
         />
         
         <TodoList>
+          {loa }
+
+
           {searchedTodos.map(item => (
             <TodoItem 
               key = {item.text}
