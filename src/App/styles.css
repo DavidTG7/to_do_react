@@ -4,6 +4,19 @@ body {
   margin: 0;
 }
 
+
+@media all and (max-width: 760px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  body {
+    font-size: 10px;
+  }
+}
+
 h1 {
   text-align: center;
   color: hsla(0, 0%, 30%, 1);

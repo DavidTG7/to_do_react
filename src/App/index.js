@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { TodoCounter } from "../TodoCounter";
-import { TodoSearch } from "../TodoSearch";
-import { TodoList } from "../TodoList";
-import { TodoItem } from "../TodoItem";
-import { CreateTodo } from "../CreateTodo";
+import React, { useEffect, useState } from 'react';
+import { Modal } from '../Modal';
+import { TodoCounter } from '../TodoCounter';
+import { TodoSearch } from '../TodoSearch';
+import { TodoList } from '../TodoList';
+import { TodoItem } from '../TodoItem';
+import { CreateTodo } from '../CreateTodo';
 import './styles.css';
+import { CreateButton } from '../CreateButton/CreateButton';
 
 const defTodos = [
   {text: 'Cut onion', completed: false},
@@ -41,9 +43,8 @@ function useLocalStorage (itemName, initialValue) {
 export default function App() {
 
   const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
- 
-
   const [searchValue, setSearchValue] = useState("");
+  const [openModal, setOpenModal] = useState(false);
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos = todos.length;
@@ -89,9 +90,8 @@ export default function App() {
   return (
     <React.Fragment>
       <div className="main">
-        <div className="left-col">
-          <CreateTodo />
-        </div>
+        {/* <div className="left-col">
+        </div> */}
         
         <div className="right-col">
         
@@ -105,7 +105,7 @@ export default function App() {
         />
         
         <TodoList>
-          {loa }
+          {/* {loa } */}
 
 
           {searchedTodos.map(item => (
@@ -118,7 +118,14 @@ export default function App() {
             />
           ))}
         </TodoList>
+
+        {openModal &&
+          <Modal>
+            <CreateTodo />
+          </Modal>
+        }
         </div>
+        <CreateButton setOpenModal={setOpenModal} />
       </div>
     </React.Fragment>
   );
