@@ -1,0 +1,32 @@
+.create-button {
+  background: none;
+  border: none;
+  font-size: 45px;
+  color: #fff;
+}
+
+.create-button-box {
+  display: flex;  
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 0 20px -1px grey;
+  border-radius: 50%;
+  background: hsl(234, 76%, 65%);
+  z-index: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.create-button-box:hover {
+  background: hsl(234, 76%, 65%, 0.7);
+  box-shadow: 0 0 20px -7px grey;
+}
+
+@keyframes mymove {
+  from {background: hsl(234, 76%, 65%);}
+  to {background: hsl(234, 76%, 65%, 0.7);}
+}
