@@ -8,12 +8,6 @@ import { CreateTodo } from '../CreateTodo';
 import './styles.css';
 import { CreateButton } from '../CreateButton/CreateButton';
 
-const defTodos = [
-  {text: 'Cut onion', completed: false},
-  {text: 'Take React course', completed: false},
-  {text: 'Make something to eat', completed: true},
-];
-
 function useLocalStorage (itemName, initialValue) {
 
   const localStorageItem = localStorage.getItem(itemName);
