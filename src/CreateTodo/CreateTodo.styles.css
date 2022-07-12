@@ -1,5 +1,6 @@
 .h2-createTodo {
   margin-bottom: 10px;
+  color: rgba(240, 240, 240, 1);
   margin-top: 55px;
 }
 
@@ -8,13 +9,10 @@
   margin: 20px;
 }
 
-.main-create-box > h1 {
+.h1-createTodo {
   color: rgba(240, 240, 240, 1);
 }
 
-.main-create-box > h2 {
-  color: rgba(240, 240, 240, 1);
-}
 
 @media all and (max-width: 1050px) {
   .main-create-box {
@@ -60,4 +58,24 @@
 
 .create-img {
   width: 50%;
+}
+
+.buttons-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px auto;
+}
+
+.modalButton {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  width: 85px;
+}
+
+.modalButton:hover {
+  background: hsl(234, 76%, 65%);
+  color:  hsl(45, 40%, 98%);
 }

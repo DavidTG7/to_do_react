@@ -1,4 +1,5 @@
 .create-button {
+  cursor: pointer;
   background: none;
   border: none;
   font-size: 45px;
@@ -6,6 +7,7 @@
 }
 
 .create-button-box {
+  cursor: pointer;
   display: flex;  
   justify-content: center;
   margin: 0 auto;
